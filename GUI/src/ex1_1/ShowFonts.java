@@ -7,10 +7,10 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Dimension;
 import java.util.Vector;
 
-public class lkjh extends JFrame{
+public class ShowFonts extends JFrame{
 
   public static void main(String[] args){
-    lkjh frame = new lkjh();
+    ShowFonts frame = new ShowFonts();
 
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setBounds(10, 10, 450, 300);
@@ -18,7 +18,7 @@ public class lkjh extends JFrame{
     frame.setVisible(true);
   }
 
-  lkjh(){
+  ShowFonts(){
     GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
 
     Font fonts[] = ge.getAllFonts();
