@@ -7,7 +7,7 @@ import org.junit.Test;
 public class VehicleTest {
 
 	@Test
-	public void StartTest() {
+	public void startTest() {
 		GasTank gasTank = new GasTank();
 		Battery battery = new Battery();
 		Vehicle fuelVC = new Vehicle(gasTank);

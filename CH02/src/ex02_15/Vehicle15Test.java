@@ -16,7 +16,7 @@ public class Vehicle15Test {
         field.setAccessible(true);	// privateなフィールドに直接アクセスを可能にする
 		assertEquals(speed, (int)field.get(tester));
 	}
-	
+
 	@Test
 	public void testStop() throws Exception {
 		int speed = 0;

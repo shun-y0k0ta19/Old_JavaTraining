@@ -17,7 +17,6 @@ public class LinkedList14Test {
 		assertEquals(vc,(Vehicle)field.get(list1));
 	}
 
-	
 	@Test
 	public void testSetNextlist() throws Exception {
 		LinkedList list1 = new LinkedList();

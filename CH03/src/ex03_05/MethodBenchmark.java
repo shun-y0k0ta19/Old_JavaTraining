@@ -4,11 +4,11 @@ public class MethodBenchmark extends Benchmark {
 
 	private int loopcount;
 	
-	public void SetLoopcount(int loopcount){
+	public void setLoopcount(int loopcount){
 		this.loopcount = loopcount;
 	}
 	
-	public int GetLoopcount(){
+	public int getLoopcount(){
 		return this.loopcount;
 	}
 	
@@ -21,9 +21,9 @@ public class MethodBenchmark extends Benchmark {
 	public static void main(String[] args) {
 		int count = Integer.parseInt(args[0]);
 		MethodBenchmark loop = new MethodBenchmark();
-		loop.SetLoopcount(Integer.parseInt(args[1]));
+		loop.setLoopcount(Integer.parseInt(args[1]));
 		long time = loop.repeat(count);
-		System.out.println(loop.GetLoopcount() + "loops " + count + 
+		System.out.println(loop.getLoopcount() + "loops " + count + 
 				"methods in " +time + "nanoseconds");
 	}
 

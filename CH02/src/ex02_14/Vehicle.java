@@ -18,7 +18,7 @@ public class Vehicle {
 		this.vehicleID = nextVehicleID;
 		nextVehicleID++;
 	}
-	
+
 	public Vehicle(String owner){
 		this.owner = owner;
 		this.vehicleID = nextVehicleID;

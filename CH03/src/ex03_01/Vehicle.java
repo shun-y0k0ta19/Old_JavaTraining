@@ -26,7 +26,7 @@ public class Vehicle {
 		nextVehicleID++;
 	}
 	
-	public void Show(){
+	public void show(){
 		System.out.println("speed = " + this.speed);
 		System.out.println("angle = " + this.angle);
 		System.out.println("owner = " + this.owner);
@@ -35,53 +35,53 @@ public class Vehicle {
 	}
 	
 	// Set speed, angle, owner
-	public void SetAll(int speed, int angle, String owner){
+	public void setAll(int speed, int angle, String owner){
 		this.speed = speed;
 		this.angle = angle;
 		this.owner = owner;
 	}
 	
 	// Setter for speed
-	public void ChangeSpeed(int speed){
+	public void changeSpeed(int speed){
 		this.speed = speed;
 	}
 	
 	// Setter for speed to 0
-	public void Stop(){
+	public void stop(){
 		this.speed = 0;
 	}
 	
 	// Setter for angle
-	public void SetAngle(int angle){
+	public void setAngle(int angle){
 		this.angle = angle;
 	}
 	
 	// Setter for owner
-	public void SetOwner(String owner){
+	public void setOwner(String owner){
 		this.owner = owner;
 	}
 	
 	// Getter for speed
-	public int GetSpeed(){
+	public int getSpeed(){
 		return this.speed;
 	}
 	
 	// Getter for angle
-	public int GetAngle(){
+	public int getAngle(){
 		return this.angle;
 	}
 	
 	// Getter for owner
-	public String GetOwner(){
+	public String getOwner(){
 		return this.owner;
 	}
 	
 	// Getter for VehicleID
-	public long GetVehicleID(){
+	public long getVehicleID(){
 		return this.vehicleID;
 	}
 	
-	public static long MaxID(){
+	public static long maxID(){
 		return nextVehicleID - 1;
 	}
 	
@@ -107,8 +107,8 @@ public class Vehicle {
 
 	public static void main(String[] args){
 		Vehicle vc = new Vehicle(args[0]);
-		vc.ChangeSpeed(100);
+		vc.changeSpeed(100);
 		vc.turn(Turn.TURN_LEFT);
-		vc.Show();
+		vc.show();
 	}
 }
